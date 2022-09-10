@@ -1,0 +1,29 @@
+/*Написать программу, которая, используя минимальное количество оперативной памяти рассчитает,
+периметр прямоугольника со сторонами A и B(0 < A, B < 20).A и B считать с клавиатуры.*/
+
+
+#include <iostream>
+#include<iomanip>
+
+int main()
+{
+    float A, B,Per;
+    A = 0;
+    B = 0;
+    std::cout << "Input A (A<20)\n";
+    std::cin >> A;
+    while (A <= 0 or A>= 20) {
+        std::cout << "Parametrs not fulfilled.\n Try again:\n";
+        std::cin >> A;
+    }
+    std::cout << "Input B (B<20)\n";
+    std::cin >> B;
+    while (B >= 20 or B <= 0) 
+    {
+        std::cout << "Parametrs not fulfilled.\n Try again:\n";
+        std::cin >> B;
+    }
+    Per = (A + B) * 2;
+    std::cout << "Perimeter of the rectangular is: " << Per;
+
+}
