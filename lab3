@@ -1,0 +1,21 @@
+#include "pch.h"
+#include <iostream>
+
+/*Вариант - 3. Дана последовательность целых чисел{ Aj }.Найти произведение чисел, лежащих на отpезке[-2, 20], наименьшее из таких чисел и номер этого числа в последовательности.*/
+
+
+int main()
+{
+	int n;
+	std::cout << "Enter amount of numbers in array: ";
+	std::cin >> n;
+	std::cout << "Enter numbers one by one: ";
+	int array[10000];
+	for (int i = 0;i < n;i++)
+	{
+		std::cin >> array[i];
+	}
+
+
+
+}
