@@ -1,0 +1,48 @@
+//Вариант 3.
+/*1.	Ввести натуральные числа A, B и C.Если A больше B и B больше C, то вывести A - B - C, если B больше A и B  кратно C, то вывести B / С + B - A, в остальных случаях вывести A + B + C.*/
+
+
+#include "pch.h"
+#include <iostream>
+
+int main()
+{
+	int A, B, C;
+	std::cin >> A >> B >> C;
+
+	if (A > B and B > C) 
+	{ std::cout << A - B - C; }
+	else if (B > A and B%C == 0)
+	{std::cout << B / C + B - A;}
+	else { std::cout << A + B + C; }
+
+	/*2.	Ввести цифру N, при помощи оператора switch вывести название цифры.Предусмотреть обработку ошибочного ввода N.*/
+	int N;
+	std::cin >> N;
+
+	switch (N)
+	{
+	case 0: std::cout << "zero";
+		break;
+	case 1: std::cout << "one";
+		break;
+	case 2: std::cout << "two";
+		break;
+	case 3: std::cout << "three";
+		break;
+	case 4: std::cout << "four";
+		break;
+	case 5: std::cout << "five";
+		break;
+	case 6: std::cout << "six";
+		break;
+	case 7: std::cout << "seven";
+		break;
+	case 8: std::cout << "eight";
+		break;
+	case 9: std::cout << "nine";
+		break;
+default: std::cout << "invalid input";
+	}
+
+}
