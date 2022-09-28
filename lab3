@@ -1,5 +1,6 @@
 #include "pch.h"
 #include <iostream>
+using std::endl;
 
 /*Вариант - 3. Дана последовательность целых чисел{ Aj }.Найти произведение чисел, лежащих на отpезке[-2, 20], наименьшее из таких чисел и номер этого числа в последовательности.*/
 
@@ -10,12 +11,27 @@ int main()
 	std::cout << "Enter amount of numbers in array: ";
 	std::cin >> n;
 	std::cout << "Enter numbers one by one: ";
-	int array[10000];
-	for (int i = 0;i < n;i++)
+	int arr[10000];
+	for (int i = 0; i < n; i++)
 	{
-		std::cin >> array[i];
+		std::cin >> arr[i];
 	}
-
-
-
+	long long int mult = 1;
+	int min = 20;
+	int max = -2;
+	int count = 0;
+	for (int i = 0; i < n; i++){
+    if (arr[i] >= -2 and arr[i] <= 20) {
+			mult*= arr[i];
+			if (arr[i] < min) min = arr[i];
+			if (arr[i] > max) max = arr[i];
+			count++;
+}
+	}
+	if (count > 0) {
+		std::cout << "MUltiplicatiou result: " << mult << endl;
+		std::cout << "Maximum in the interval: " << max << endl;
+		std::cout << "Minimum in the interval: " << min << endl;
+	}
+	else std::cout << "No such numbers" << endl;
 }
