@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\lab3",
+    "\\lab4_all\\lab4_1",
+    "\\lab4_all\\lab4_2",
+    "\\lab4_all\\lab4_3",
+    "\\lab5"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\lab5\\lab5.sln",
   "PreviewInSolutionExplorer": false
 }
